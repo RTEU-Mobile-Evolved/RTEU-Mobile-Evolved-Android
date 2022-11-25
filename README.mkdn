@@ -1,0 +1,14 @@
+RTEU Mobile Evolved
+-------------------
+
+This source is decompiled and isn't 100% accurate compared to what the
+original code is. If you're the copyright holder of this app, email me
+at busra.kurt@outlook.com so we can resolve the situation together.
+
+**ARM64 app is decompiled here, and WILL NOT work on ARM32!**
+
+Tools Used
+----------
+- `apktool` to decompile APK and skeleton
+- `dex2jar` to generate Java binary, `classes-dex2jar.jar`
+- `jd-gui` to browse through generated Java binary

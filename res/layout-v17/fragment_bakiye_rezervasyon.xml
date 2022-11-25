@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_timeline" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_bakiye" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:weightSum="2.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_bakiye" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SKS Bakiye" android:layout_toRightOf="@id/textView2" android:layout_alignParentTop="true" android:fontFamily="@font/proxima_nova_bold" android:layout_toEndOf="@id/textView2" />
+                <TextView android:textColor="@color/white" android:id="@id/tv_sksbakiye" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_toRightOf="@id/textView2" android:layout_alignParentTop="true" android:fontFamily="@font/proxima_nova_regular" android:layout_toEndOf="@id/textView2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_bakiye" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="İİM Bakiye" android:layout_toRightOf="@id/textView2" android:layout_alignParentTop="true" android:fontFamily="@font/proxima_nova_bold" android:layout_toEndOf="@id/textView2" />
+                <TextView android:textColor="@color/white" android:id="@id/tv_iimbakiye" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_toRightOf="@id/textView2" android:layout_alignParentTop="true" android:fontFamily="@font/proxima_nova_regular" android:layout_toEndOf="@id/textView2" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/iv_parayukle" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_parayukle" android:scaleType="centerCrop" android:layout_below="@id/ll_bakiye" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_buttons" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/iv_parayukle" />
+        <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</ScrollView>

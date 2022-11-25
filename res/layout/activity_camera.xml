@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/root" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="top" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/toggleCamera" android:background="@color/transparent" android:padding="10.0dip" android:layout_width="56.0dip" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_switch" />
+    </RelativeLayout>
+    <com.otaliastudios.cameraview.CameraView android:layout_gravity="center" android:id="@id/camera" android:layout_width="fill_parent" android:layout_height="350.0dip" android:keepScreenOn="true" app:cameraAudio="on" app:cameraCropOutput="true" app:cameraFacing="back" app:cameraFlash="off" app:cameraGestureLongTap="none" app:cameraGesturePinch="zoom" app:cameraGestureScrollHorizontal="exposureCorrection" app:cameraGestureScrollVertical="none" app:cameraGestureTap="focusWithMarker" app:cameraGrid="off" app:cameraJpegQuality="50" app:cameraPlaySounds="true" app:cameraSessionType="picture" />
+    <RelativeLayout android:layout_gravity="bottom" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/capturePhoto" android:background="@drawable/circle_frame_background_dark" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_photo" />
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/controls" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_hideable="true" app:behavior_peekHeight="300.0dip" app:behavior_skipCollapsed="false" app:layout_behavior="@string/bottom_sheet_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

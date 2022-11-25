@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/rteu_item_ls_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rltop" android:background="@drawable/bg_item_ls" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+            <TextView android:textColor="@color/rteu_grey_fak" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" android:text="@string/starting" android:layout_below="@id/tv_teacher" android:fontFamily="@font/proxima_nova_semibold" />
+            <TextView android:textColor="@color/rteu_grey_dark" android:gravity="start" android:id="@id/tv_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="90.0dip" android:text="-" android:layout_toRightOf="@id/textView23" android:layout_below="@id/tv_teacher" android:fontFamily="@font/proxima_nova_semibold" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ll_first">
+            <TextView android:textColor="@color/rteu_grey_fak" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/ending" android:layout_toRightOf="@id/tv_group" android:layout_below="@id/tv_teacher" android:fontFamily="@font/proxima_nova_semibold" />
+            <TextView android:textColor="@color/rteu_grey_dark" android:gravity="start" android:id="@id/tv_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_toRightOf="@id/textView24" android:layout_below="@id/tv_teacher" android:fontFamily="@font/proxima_nova_semibold" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/seperator" android:background="@color/textGrey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/rltop" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/seperator">
+        <TextView android:textSize="15.0sp" android:textColor="@color/rteu_black" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/teorik_absenteeism_hours" android:maxLines="1" android:fontFamily="@font/proxima_nova_semibold" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/rteu_orange" android:id="@id/tv_teorik" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="-" android:maxLines="1" android:fontFamily="@font/proxima_nova_semibold" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/rteu_black" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lab_absenteeism_hours" android:maxLines="1" android:fontFamily="@font/proxima_nova_semibold" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/rteu_orange" android:id="@id/tv_uygulama" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="-" android:maxLines="1" android:fontFamily="@font/proxima_nova_semibold" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/rteu_black" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/total_absenteeism_hours" android:maxLines="1" android:fontFamily="@font/proxima_nova_semibold" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/rteu_orange" android:id="@id/tv_toplam" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="-" android:maxLines="1" android:fontFamily="@font/proxima_nova_semibold" />
+    </LinearLayout>
+</RelativeLayout>

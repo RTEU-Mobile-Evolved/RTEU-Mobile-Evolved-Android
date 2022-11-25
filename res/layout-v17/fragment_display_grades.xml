@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_timeline" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_not_top" android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+            <Spinner android:id="@id/sp_year_not" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip" android:text="@string/year" android:layout_weight="1.0" />
+            <Spinner android:id="@id/sp_period_not" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip" android:prompt="@string/period" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:id="@id/seperator" android:background="@color/bg_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/linearLayout" />
+        <Spinner android:id="@id/sp_lessons" android:layout_width="fill_parent" android:layout_height="38.0dip" android:text="@string/lesson" android:layout_below="@id/seperator" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/transparent" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_not_top">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_notlar" android:visibility="invisible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_not_found" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/not_found" android:fontFamily="@font/proxima_nova_regular" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/pb_not" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

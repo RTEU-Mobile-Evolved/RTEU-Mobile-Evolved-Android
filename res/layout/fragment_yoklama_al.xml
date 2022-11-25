@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_timeline" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/ll_week" android:background="@color/white" android:padding="3.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <ImageView android:gravity="center_horizontal" android:id="@id/iv_week_left" android:layout_width="28.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_keyboard_arrow_left" android:layout_weight="1.0" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_week" android:layout_width="wrap_content" android:layout_height="38.0dip" android:layout_weight="1.0" android:layout_below="@id/tv_unjoined_count" android:layout_alignTop="@id/tv_teacher" android:layout_alignBottom="@id/tv_teacher" android:fontFamily="@font/proxima_nova_regular" />
+        <ImageView android:gravity="center_horizontal" android:id="@id/iv_week_right" android:layout_width="28.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_keyboard_arrow_right" android:layout_weight="1.0" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_yok_top" android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_below="@id/ll_week">
+        <Spinner android:id="@id/sp_lessons" android:layout_width="fill_parent" android:layout_height="38.0dip" />
+        <View android:id="@id/seperator" android:background="@color/bg_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/sp_lessons" />
+        <LinearLayout android:id="@id/ll_hours" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="38.0dip" android:weightSum="2.0" android:layout_below="@id/seperator">
+            <Spinner android:id="@id/sp_branch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_below="@id/seperator" />
+            <Spinner android:id="@id/sp_hours" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatButton android:textColor="@color/white" android:gravity="center" android:id="@id/rv_open" android:background="@drawable/bg_corner_end_yoklama" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/yoklama_baslat" android:layout_below="@id/ll_hours" android:textAllCaps="false" android:fontFamily="@font/proxima_nova_semibold" rv_centered="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_details_started" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_yok_top">
+        <android.support.design.widget.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="3.0dip" android:fontFamily="@font/proxima_nova_regular" app:tabGravity="fill" app:tabMaxWidth="0.0dip" app:tabMode="fixed" app:tabSelectedTextColor="@color/nliveo_colorPrimary" app:tabTextColor="@color/nliveo_gray" />
+        <include layout="@layout/fragment_yoklama_details" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

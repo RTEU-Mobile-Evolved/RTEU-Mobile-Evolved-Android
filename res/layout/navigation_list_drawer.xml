@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="start" android:id="@id/containerList" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:layout_gravity="start" android:id="@id/list" android:background="@color/nliveo_white" android:fitsSystemWindows="true" android:layout_width="@dimen/drawer_layout_width" android:layout_height="fill_parent" android:cacheColorHint="@color/nliveo_transparent" android:divider="@color/nliveo_transparent" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:layout_above="@id/layoutFooter" />
+    <RelativeLayout android:id="@id/layoutFooter" android:background="@color/nliveo_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <com.balysv.materialripple.MaterialRippleLayout android:id="@id/layoutFooterDrawer" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.nLiveo.MaterialRippleLayout"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout android:id="@id/footerDrawer" android:background="@color/nliveo_white" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <ImageView android:id="@id/iconFooter" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_centerVertical="true" android:contentDescription="@string/clear" />
+                <TextView android:textSize="@dimen/default_textSize" android:textColor="#ff000000" android:id="@id/titleFooter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="8.0dip" android:text="@string/clear" android:layout_toRightOf="@id/iconFooter" android:layout_centerVertical="true" android:fontFamily="@font/proxima_nova_regular" fontPath="fonts/Roboto-Medium.ttf" />
+            </RelativeLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <com.balysv.materialripple.MaterialRippleLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layoutFooterDrawer" style="@style/AppTheme.nLiveo.MaterialRippleLayout">
+            <RelativeLayout android:id="@id/footerSecondDrawer" android:background="@color/nliveo_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <ImageView android:id="@id/iconSecondFooter" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_centerVertical="true" android:contentDescription="@string/clear" />
+                <TextView android:textSize="@dimen/default_textSize" android:textColor="#ff000000" android:id="@id/titleSecondFooter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="8.0dip" android:text="@string/clear" android:layout_toRightOf="@id/iconSecondFooter" android:layout_centerVertical="true" android:fontFamily="@font/proxima_nova_regular" fontPath="fonts/Roboto-Medium.ttf" />
+            </RelativeLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_timeline" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_meal_top" android:background="@drawable/bg_corner_white_5_layout" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <Spinner android:id="@id/sp_yerleske" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+        <View android:id="@id/seperator" android:background="@color/bg_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/sp_yerleske" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_below="@id/seperator" android:layout_alignParentLeft="true">
+            <RelativeLayout android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_weight="1.0">
+                <Spinner android:layout_width="fill_parent" android:layout_height="48.0dip" />
+                <TextView android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="start|center" android:id="@id/tv_date" android:background="@color/transparent" android:paddingLeft="@dimen/ms__popup_padding_left" android:paddingTop="@dimen/ms__popup_padding_top" android:paddingRight="@dimen/ms__popup_padding_left" android:paddingBottom="@dimen/ms__popup_padding_top" android:layout_width="fill_parent" android:layout_height="48.0dip" android:minHeight="@dimen/ms__item_height" android:singleLine="true" android:fontFamily="@font/proxima_nova_regular" />
+            </RelativeLayout>
+            <Spinner android:id="@id/sp_ogun" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_weight="1.0" android:fontFamily="@font/proxima_nova_regular" />
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.AppCompatButton android:textColor="@color/white" android:gravity="center" android:id="@id/rv_tl" android:background="@drawable/bg_corner_end_yoklama" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="5.0dip" android:text="@string/get_credit" android:layout_below="@id/rl_meal_top" android:textAllCaps="false" android:fontFamily="@font/proxima_nova_regular" rv_centered="true" />
+    <ListView android:id="@id/lv_eat" android:background="@drawable/bg_corner_white_5_layout" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rv_tl" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_not_found" android:background="@drawable/bg_corner_white_5_layout" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/not_found" android:layout_below="@id/rv_tl" android:layout_alignParentLeft="true" android:fontFamily="@font/proxima_nova_regular" />
+    <ProgressBar android:id="@id/pb_food_menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_timeline" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_top" android:background="@drawable/bg_corner_white_5_layout" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <Spinner android:id="@id/sp_birim" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_pager" android:background="@drawable/bg_corner_white_5_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_top" android:layout_alignParentLeft="true">
+        <android.support.design.widget.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabGravity="fill" app:tabMaxWidth="0.0dip" app:tabMode="fixed" app:tabSelectedTextColor="@color/nliveo_colorPrimary" app:tabTextColor="@color/nliveo_gray" />
+        <include layout="@layout/fragment_belgeler" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_main" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/bg_home_top" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="110.0dip">
+        <ImageView android:id="@id/iv_homemenu" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_rmenu" />
+        <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="2.0dip" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_rte_home_logo" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_below="@id/imageView3" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_rte_title" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:paddingTop="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tıkla Ara" android:layout_toLeftOf="@id/iv_tel" android:layout_alignTop="@id/iv_tel" android:layout_alignBottom="@id/iv_tel" android:fontFamily="@font/proxima_nova_semibold" />
+            <ImageView android:id="@id/iv_tel" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_rtelnumber" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="180.0dip">
+        <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:srcCompat="@drawable/bg_home_image" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:srcCompat="@drawable/rectangle" />
+        <android.support.v4.view.ViewPager android:id="@id/view_pager" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <co.ceryle.fitgridview.FitGridView android:id="@id/gridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" app:column="2" app:row="5" />
+</LinearLayout>

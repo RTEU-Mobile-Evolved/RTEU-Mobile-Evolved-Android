@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_notification" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center" android:id="@id/iv_back_circle" android:background="@drawable/ic_circle_blue" android:layout_width="45.0dip" android:layout_height="45.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" app:civ_border_overlay="true" />
+        <ImageView android:id="@id/iv_notif" android:padding="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/ic_ryoklama" android:scaleType="centerCrop" />
+        <RelativeLayout android:id="@id/rl_notif_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/iv_notif" android:layout_centerVertical="true">
+            <TextView android:textSize="12.0sp" android:typeface="sans" android:textColor="@color/textGrey_title_dark" android:layout_gravity="center" android:id="@id/tv_notif_text" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="instant instantaasstall sisdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsddsdnce ttion on disk." android:maxLines="3" android:layout_centerVertical="true" android:fontFamily="@font/proxima_nova_regular" />
+            <TextView android:textSize="9.0sp" android:typeface="sans" android:textColor="@color/textGrey" android:id="@id/tv_notif_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="24M" android:layout_below="@id/tv_notif_text" android:layout_alignLeft="@id/tv_notif_text" android:fontFamily="@font/proxima_nova_regular" />
+            <ImageView android:id="@id/imageView11" android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_alignTop="@id/tv_notif_time" app:srcCompat="@drawable/time_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

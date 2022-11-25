@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.loopeer.android.librarys.scrolltable.IHorizontalScrollView android:id="@id/scroll_header_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/table_top_title_height">
+        <com.loopeer.android.librarys.scrolltable.TopTitleView android:id="@id/header_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </com.loopeer.android.librarys.scrolltable.IHorizontalScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.loopeer.android.librarys.scrolltable.VerticalScrollView android:id="@id/scroll_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.loopeer.android.librarys.scrolltable.LeftTitleView android:id="@id/header_vertical" android:visibility="gone" android:layout_width="@dimen/table_left_title_width" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" />
+                <com.loopeer.android.librarys.scrolltable.IHorizontalScrollView android:id="@id/scroll_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.loopeer.android.librarys.scrolltable.CustomTableView android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_default_margin_top" />
+                </com.loopeer.android.librarys.scrolltable.IHorizontalScrollView>
+            </LinearLayout>
+        </com.loopeer.android.librarys.scrolltable.VerticalScrollView>
+    </LinearLayout>
+</LinearLayout>

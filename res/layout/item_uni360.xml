@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_uni" android:layout_width="108.0dip" android:layout_height="108.0dip" android:src="@drawable/ic_tenis" android:scaleType="centerCrop" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/tv_title" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/badge_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ActionButton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/badge_layout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/relative_layout_item_count" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/button1" android:background="@drawable/ic_notifications_none_white" android:layout_width="33.0dip" android:layout_height="33.0dip" />
+        </RelativeLayout>
+        <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_badge_notification" android:background="@android:drawable/ic_notification_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_alignRight="@id/relative_layout_item_count" android:fontFamily="@font/proxima_nova_regular" />
+    </RelativeLayout>
+</RelativeLayout>
